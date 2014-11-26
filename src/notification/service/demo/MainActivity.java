@@ -22,7 +22,6 @@ public class MainActivity extends Activity implements OnClickListener{
 	DatePicker datepicker;
 	TimePicker timepicker;
 	Button btnSetNotification;
-	Button btnCancelAllNotification;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,9 +33,7 @@ public class MainActivity extends Activity implements OnClickListener{
         datepicker = (DatePicker) findViewById(R.id.DatePicker1);
         timepicker = (TimePicker) findViewById(R.id.timePicker1);
         btnSetNotification = (Button) findViewById(R.id.buttonSetNotification);
-        
         btnSetNotification.setOnClickListener(this);
-        btnCancelAllNotification.setOnClickListener(this);
     }
 
 	@Override
